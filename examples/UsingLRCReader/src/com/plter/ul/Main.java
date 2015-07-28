@@ -17,6 +17,8 @@ public class Main {
             FileInputStream in = new FileInputStream(f);
             reader = new LRCReader(new InputStreamReader(in,"UTF-8"));
             in.close();
+
+            System.out.println(reader.getLrcMap());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

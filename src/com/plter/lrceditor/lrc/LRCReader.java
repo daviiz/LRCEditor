@@ -49,8 +49,6 @@ public class LRCReader {
                 break;
             }
         }
-
-        System.out.println(lrcMap);
     }
 
     /**
@@ -60,6 +58,10 @@ public class LRCReader {
      */
     public String getContent(int timeTag){
         return lrcMap.get(timeTag);
+    }
+
+    public Map<Integer, String> getLrcMap() {
+        return lrcMap;
     }
 
     private Map<Integer,String> lrcMap = new HashMap<>();
