@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("/com/plter/lrceditor/views/LRCEditor.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("LRC歌词编辑器");
         primaryStage.setScene(new Scene(root, 600, 700));
         primaryStage.show();
     }
