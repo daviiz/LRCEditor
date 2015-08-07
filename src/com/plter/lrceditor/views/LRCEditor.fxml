@@ -2,7 +2,7 @@
 <?import javafx.scene.layout.*?>
 <VBox style="-fx-padding: 10px" spacing="5" fx:controller="com.plter.lrceditor.controllers.LRCEditorController" xmlns:fx="http://javafx.com/fxml">
     <HBox spacing="5">
-        <Button text="插入时间[00:00]"/>
+        <Button text="插入时间[00:00]" fx:id="btnInsertTimeTag" onAction="#btnInsertTimeTagActionHandler"/>
         <Button text="打开歌曲"/>
         <Button text="播放"/>
         <Button text="暂停"/>
@@ -15,6 +15,6 @@
         <Label text="演唱歌手"/>
         <TextField/>
     </HBox>
-    <TextArea VBox.vgrow="ALWAYS"/>
+    <TextArea VBox.vgrow="ALWAYS" fx:id="taTextContent"/>
 </VBox>
 
